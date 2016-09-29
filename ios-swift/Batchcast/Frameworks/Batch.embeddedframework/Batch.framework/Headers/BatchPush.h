@@ -159,6 +159,9 @@ typedef NS_OPTIONS(NSUInteger, BatchNotificationType)
  */
 + (void)handleNotification:(NSDictionary*)userInfo actionIdentifier:(NSString*)identifier NS_AVAILABLE_IOS(8_0);
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 /*!
  @method handleNotification
  @abstract Make Batch process the user notification settings change. You should call this method in "application:didRegisterUserNotificationSettings:".
@@ -166,6 +169,8 @@ typedef NS_OPTIONS(NSUInteger, BatchNotificationType)
  @param userInfo : The untouched "notificationSettings" UIUserNotificationSettings* argument given to you in the application delegate method.
  */
 + (void)handleRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_AVAILABLE_IOS(8_0);
+
+#pragma clang diagnostic pop
 
 #pragma mark UserNotifications methods (iOS 10 only)
 
