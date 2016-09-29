@@ -1,4 +1,4 @@
-![Logo](https://raw.github.com/BatchLabs/Batchcasts-ios/master/readme_logo.png)
+![Logo](https://raw.github.com/BatchLabs/batchcast-ios/master/readme_logo.png)
 
 # Batchcast
 This sample is a full fledged example meant to show both basic and advanced integrations of the Batch SDK with a real-world use case.  
