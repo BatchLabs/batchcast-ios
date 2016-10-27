@@ -12,4 +12,5 @@
 #import "BatchAds.h"
 #import "BatchLogger.h"
 #import "BatchUser.h"
+#import "BatchMessaging.h"
 #import "BatchActions.h"
