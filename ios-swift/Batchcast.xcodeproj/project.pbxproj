@@ -291,6 +291,7 @@
 				519302E51D4A3C6100ABC346 /* Resources */,
 				512755C31D75859D00DF43C7 /* Embed App Extensions */,
 				51D231D81D7591120006F884 /* Embed Frameworks */,
+				51DFDD0C1E795AAD004781A6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51DFDD0C1E795AAD004781A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/BatchExtension.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		512755B41D75859D00DF43C7 /* Sources */ = {
