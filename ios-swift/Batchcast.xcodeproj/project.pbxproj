@@ -11,11 +11,11 @@
 		51120BD21D4F8ABC00468773 /* LoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51120BD11D4F8ABC00468773 /* LoginCredentialsViewController.swift */; };
 		51120BD41D4F990400468773 /* Batch.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = 51120BD31D4F990400468773 /* Batch.embeddedframework */; };
 		51120BD61D4F997E00468773 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51120BD51D4F997E00468773 /* libsqlite3.tbd */; };
-		51120BD81D4F9D1400468773 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51120BD71D4F9D1400468773 /* Batch.framework */; };
 		51120BDA1D4FA78100468773 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51120BD91D4FA78100468773 /* UserManager.swift */; };
 		512755BB1D75859D00DF43C7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512755BA1D75859D00DF43C7 /* NotificationService.swift */; };
 		512755BF1D75859D00DF43C7 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 512755B81D75859D00DF43C7 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		512755C51D7585AF00DF43C7 /* BatchExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512755C41D7585AF00DF43C7 /* BatchExtension.framework */; };
+		516F006B1E7FD4C2005DE4A8 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51120BD71D4F9D1400468773 /* Batch.framework */; };
 		5189305C1D50A688005EE59C /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189305B1D50A688005EE59C /* SubscriptionManager.swift */; };
 		519302EB1D4A3C6100ABC346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519302EA1D4A3C6100ABC346 /* AppDelegate.swift */; };
 		519302F01D4A3C6100ABC346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519302EE1D4A3C6100ABC346 /* Main.storyboard */; };
@@ -33,7 +33,6 @@
 		51CA4D901D4B5CE4003753E0 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D8F1D4B5CE4003753E0 /* EpisodeCell.swift */; };
 		51CA4D921D4B9181003753E0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D911D4B9181003753E0 /* SettingsTableViewController.swift */; };
 		51CA4D951D4BB351003753E0 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D941D4BB351003753E0 /* LoginNavigationController.swift */; };
-		51D231D61D7591120006F884 /* BatchExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512755C41D7585AF00DF43C7 /* BatchExtension.framework */; };
 		51D231D71D7591120006F884 /* BatchExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 512755C41D7585AF00DF43C7 /* BatchExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51EACDD81D50F95A0046876C /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EACDD71D50F95A0046876C /* NotificationsCell.swift */; };
 		51EACDDA1D523ED20046876C /* DebugTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EACDD91D523ED20046876C /* DebugTableViewController.swift */; };
@@ -137,8 +136,7 @@
 			files = (
 				51EACDDC1D5244070046876C /* AdSupport.framework in Frameworks */,
 				51120BD61D4F997E00468773 /* libsqlite3.tbd in Frameworks */,
-				51120BD81D4F9D1400468773 /* Batch.framework in Frameworks */,
-				51D231D61D7591120006F884 /* BatchExtension.framework in Frameworks */,
+				516F006B1E7FD4C2005DE4A8 /* Batch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
