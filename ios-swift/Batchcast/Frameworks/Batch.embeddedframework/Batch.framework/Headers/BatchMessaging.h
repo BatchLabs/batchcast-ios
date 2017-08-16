@@ -66,7 +66,7 @@
 
  @param message In-App message to show.
  */
-- (void)batchInAppMessageReady:(nonnull BatchInAppMessage*)message;
+- (void)batchInAppMessageReady:(nonnull BatchInAppMessage*)message NS_SWIFT_NAME(batchInAppMessageReady(message:));
 
 @end
 
