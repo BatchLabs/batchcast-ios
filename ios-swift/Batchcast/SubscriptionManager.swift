@@ -60,7 +60,7 @@ class SubscriptionManager {
         // This method can be improved by caching the subscription list to avoid the overhead of reading the user defaults
         
         if let subscribedSources = UserDefaults.standard.stringArray(forKey: sourceSubscriptionListKey) {
-            return subscribedSources.index(of: name) != nil
+            return subscribedSources.firstIndex(of: name) != nil
         }
         
         return false
@@ -69,7 +69,7 @@ class SubscriptionManager {
     func isSubscribedToSuggestion(_ name: String) -> Bool {
         
         if let subscribedSuggestions = UserDefaults.standard.stringArray(forKey: suggestionCategoriesKeys) {
-            return subscribedSuggestions.index(of: name) != nil
+            return subscribedSuggestions.firstIndex(of: name) != nil
         }
         
         return false
@@ -88,7 +88,7 @@ class SubscriptionManager {
         var array: [String] = defaults.stringArray(forKey: arrayName) ?? []
         
         if enabled {
-            if array.index(of: value) == nil {
+            if array.firstIndex(of: value) == nil {
                 array.append(value)
             }
         } else {

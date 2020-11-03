@@ -41,7 +41,7 @@ class SettingsTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         // Refresh the notification settings when we come back in the app, since the user can have changed them in iOS' settings
-        NotificationCenter.default.addObserver(self, selector: #selector(refreshForm), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshForm), name: UIApplication.didBecomeActiveNotification, object: nil)
         
         // Also refresh the notification settings when iOS tells us they changed, since DidBecomeActiveNotification arrives a little too early
         NotificationCenter.default.addObserver(self, selector: #selector(refreshForm), name: NSNotification.Name(rawValue: UserNotificationChanged), object: nil)
@@ -79,7 +79,7 @@ class SettingsTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func refreshForm() {
+    @objc func refreshForm() {
         let loggedIn = UserManager().isLoggedIn
         let subscriptionManager = SubscriptionManager()
         
@@ -128,9 +128,9 @@ class SettingsTableViewController: UITableViewController {
         let oldLoginLabel = loginButton.currentTitle
         
         if loggedIn {
-            loginButton.setTitle("Log out", for: UIControlState())
+            loginButton.setTitle("Log out", for: UIControl.State())
         } else {
-            loginButton.setTitle("Log in", for: UIControlState())
+            loginButton.setTitle("Log in", for: UIControl.State())
         }
         
         // If the button label changed, we want to update the "Logged in as xxx" section header
@@ -162,7 +162,7 @@ class SettingsTableViewController: UITableViewController {
                                       preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Go", style: .default) { (_) in
-            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+            if let url = URL(string: UIApplication.openSettingsURLString) {
                 UIApplication.shared.openURL(url)
             }
         })

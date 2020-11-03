@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,13 +14,13 @@
 		51120BDA1D4FA78100468773 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51120BD91D4FA78100468773 /* UserManager.swift */; };
 		512755BB1D75859D00DF43C7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512755BA1D75859D00DF43C7 /* NotificationService.swift */; };
 		512755BF1D75859D00DF43C7 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 512755B81D75859D00DF43C7 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		512755C51D7585AF00DF43C7 /* BatchExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512755C41D7585AF00DF43C7 /* BatchExtension.framework */; };
 		516F006B1E7FD4C2005DE4A8 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51120BD71D4F9D1400468773 /* Batch.framework */; };
 		5189305C1D50A688005EE59C /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189305B1D50A688005EE59C /* SubscriptionManager.swift */; };
 		519302EB1D4A3C6100ABC346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519302EA1D4A3C6100ABC346 /* AppDelegate.swift */; };
 		519302F01D4A3C6100ABC346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519302EE1D4A3C6100ABC346 /* Main.storyboard */; };
 		519302F21D4A3C6100ABC346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519302F11D4A3C6100ABC346 /* Assets.xcassets */; };
 		519302F51D4A3C6100ABC346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519302F31D4A3C6100ABC346 /* LaunchScreen.storyboard */; };
+		51A0B1702551B21600014AD2 /* BatchExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 51A0B16F2551B21600014AD2 /* BatchExtension */; };
 		51CA4D6B1D4A4781003753E0 /* SourcesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D6A1D4A4781003753E0 /* SourcesCell.swift */; };
 		51CA4D6E1D4A47A2003753E0 /* SourcesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D6D1D4A47A2003753E0 /* SourcesCollectionViewController.swift */; };
 		51CA4D771D4A5E99003753E0 /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D761D4A5E99003753E0 /* GradientImageView.swift */; };
@@ -33,7 +33,6 @@
 		51CA4D901D4B5CE4003753E0 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D8F1D4B5CE4003753E0 /* EpisodeCell.swift */; };
 		51CA4D921D4B9181003753E0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D911D4B9181003753E0 /* SettingsTableViewController.swift */; };
 		51CA4D951D4BB351003753E0 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA4D941D4BB351003753E0 /* LoginNavigationController.swift */; };
-		51D231D71D7591120006F884 /* BatchExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 512755C41D7585AF00DF43C7 /* BatchExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51EACDD81D50F95A0046876C /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EACDD71D50F95A0046876C /* NotificationsCell.swift */; };
 		51EACDDA1D523ED20046876C /* DebugTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EACDD91D523ED20046876C /* DebugTableViewController.swift */; };
 		51EACDDC1D5244070046876C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EACDDB1D5244070046876C /* AdSupport.framework */; };
@@ -72,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				51D231D71D7591120006F884 /* BatchExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +87,6 @@
 		512755B81D75859D00DF43C7 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		512755BA1D75859D00DF43C7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		512755BC1D75859D00DF43C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		512755C41D7585AF00DF43C7 /* BatchExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BatchExtension.framework; sourceTree = "<group>"; };
 		512755C61D7585B800DF43C7 /* Batchcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Batchcast.entitlements; sourceTree = "<group>"; };
 		5189305B1D50A688005EE59C /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		519302E71D4A3C6100ABC346 /* Batchcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Batchcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512755C51D7585AF00DF43C7 /* BatchExtension.framework in Frameworks */,
+				51A0B1702551B21600014AD2 /* BatchExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +143,6 @@
 		512755B91D75859D00DF43C7 /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				512755C41D7585AF00DF43C7 /* BatchExtension.framework */,
 				512755BA1D75859D00DF43C7 /* NotificationService.swift */,
 				512755BC1D75859D00DF43C7 /* Info.plist */,
 				51D231D91D7594200006F884 /* NotificationService-Bridging-Header.h */,
@@ -276,6 +272,9 @@
 			dependencies = (
 			);
 			name = NotificationService;
+			packageProductDependencies = (
+				51A0B16F2551B21600014AD2 /* BatchExtension */,
+			);
 			productName = NotificationService;
 			productReference = 512755B81D75859D00DF43C7 /* NotificationService.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -289,7 +288,6 @@
 				519302E51D4A3C6100ABC346 /* Resources */,
 				512755C31D75859D00DF43C7 /* Embed App Extensions */,
 				51D231D81D7591120006F884 /* Embed Frameworks */,
-				51DFDD0C1E795AAD004781A6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -336,10 +334,14 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 519302DE1D4A3C6000ABC346;
+			packageReferences = (
+				51A0B16E2551B21600014AD2 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK-Extension" */,
+			);
 			productRefGroup = 519302E81D4A3C6100ABC346 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,22 +372,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		51DFDD0C1E795AAD004781A6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/BatchExtension.framework/strip-frameworks.sh\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		512755B41D75859D00DF43C7 /* Sources */ = {
@@ -473,14 +459,18 @@
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.labs.swift.Batchcast.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -500,13 +490,18 @@
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.labs.swift.Batchcast.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -593,7 +588,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -613,10 +609,13 @@
 				);
 				INFOPLIST_FILE = Batchcast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.labs.swift.Batchcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -635,10 +634,13 @@
 				);
 				INFOPLIST_FILE = Batchcast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.labs.swift.Batchcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -673,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51A0B16E2551B21600014AD2 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK-Extension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BatchLabs/Batch-iOS-SDK-Extension.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51A0B16F2551B21600014AD2 /* BatchExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51A0B16E2551B21600014AD2 /* XCRemoteSwiftPackageReference "Batch-iOS-SDK-Extension" */;
+			productName = BatchExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 519302DF1D4A3C6100ABC346 /* Project object */;
 }
