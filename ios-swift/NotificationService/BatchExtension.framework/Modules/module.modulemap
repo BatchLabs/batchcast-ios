@@ -1,6 +1,0 @@
-framework module BatchExtension {
-  umbrella header "BatchExtension.h"
-
-  export *
-  module * { export * }
-}
